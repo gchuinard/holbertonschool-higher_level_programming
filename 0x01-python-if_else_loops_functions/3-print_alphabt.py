@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for i in range(26):
-    if (i != 4 and i != 16):
-        print("{:c}".format(i + 97), end="")
+for c in range(26):
+    if (c != 4 and c != 16):
+        print("{:c}".format(c + 97), end="")
