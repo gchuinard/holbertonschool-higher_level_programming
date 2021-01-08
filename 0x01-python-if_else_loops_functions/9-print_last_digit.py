@@ -4,4 +4,3 @@ def print_last_digit(number):
         print("{:d}".format(number % 10 if number > 0 else -number % 10), end="")
     else:
         print("{:d}".format(number if number >= 0 else - number), end="")
-    print_last_digit(98)
