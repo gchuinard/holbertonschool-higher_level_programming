@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 def print_arg():
-    
     import sys
 
     if len(sys.argv) == 1:
