@@ -1,0 +1,7 @@
+#!/usr/bin/python3
+def square_matrix_simple(matrix=[]):
+    new_matrix = []
+    i = 0
+    for tab in matrix:
+        new_matrix.append(list(map(lambda x: x**2, tab)))
+    return new_matrix
