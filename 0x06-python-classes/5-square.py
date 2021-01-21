@@ -38,7 +38,7 @@ class Square:
         if size_p == 0:
             print()
         else:
-            for row in range(size):
-                for column in range(size):
+            for row in range(size_p):
+                for column in range(size_p):
                     print('#', end="")
                 print()
