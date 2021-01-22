@@ -3,6 +3,7 @@
 add_integer - function that adds 2 integers.
 """
 
+
 def add_integer(a, b=98):
     """
     args:
@@ -11,6 +12,10 @@ def add_integer(a, b=98):
     return: the sun of a + b in integer or raise error if fail.
     """
 
+    if a == float("inf") or a == float("-inf"):
+        raise TypeError("a must be an integer")
+    if b == float("inf") or b == float("-inf"):
+        raise TypeError("b must be an integer")
     if type(a) != int and type(a) != float:
         raise TypeError("a must be an integer")
     if type(b) != int and type(b) != float:
