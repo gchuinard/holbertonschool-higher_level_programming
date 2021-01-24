@@ -9,7 +9,7 @@ def matrix_divided(matrix, div):
     args:
         matrix (int, float): the first integer.
         div (int, float): the second integer.
-    return: the a matrix with all the numbers divide by div or raise error if fail.
+    return: the a matrix with all the nbr divide by div or raise error if fail.
     """
 
     Error_msg = "matrix must be a matrix (list of lists) of integers/floats"
