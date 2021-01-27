@@ -18,3 +18,8 @@ Tests:
 	Traceback (most recent call last):
 	...
 	TypeError: unorderable types: int() < str()
+
+	>>> a = [1, 2, 3]
+	>>> b = MyList(a)
+	>>> a is b
+	False
