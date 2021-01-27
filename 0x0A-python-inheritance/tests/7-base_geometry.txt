@@ -65,3 +65,6 @@ Tests:
 	TypeError: age must be an integer
 	
 	>>> base_g.integer_validator("age", True)
+	Traceback (most recent call last):
+	...
+	TypeError: age must be an integer
