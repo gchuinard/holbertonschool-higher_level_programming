@@ -19,7 +19,11 @@ Tests:
 	...
 	TypeError: unorderable types: int() < str()
 
-	>>> a = [1, 2, 3]
-	>>> b = MyList(a)
-	>>> a is b
-	False
+	>>> a = MyList([1, 2, 3])
+	>>> print(a)
+	[1, 2, 3]
+	>>> a.append(4)
+	>>> a.print_sorted()
+	[1, 2, 3, 4]
+	>>> print(a)
+	[1, 2, 3, 4]
