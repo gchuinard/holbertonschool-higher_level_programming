@@ -1,0 +1,20 @@
+The ``1-my_list`` module
+========================
+
+Using ``MyList``
+-----------------
+
+Import:
+	>>> MyList = __import__('1-my_list').MyList
+
+Tests:
+	>>> MyList([-100, -1, -1000, -10000, -10]).print_sorted()
+	[-10000, -1000, -100, -10, -1]
+
+	>>> MyList().print_sorted()
+	[]
+
+	>>> MyList(["string", 2, 3]).print_sorted()
+	Traceback (most recent call last):
+	...
+	TypeError: unorderable types: int() < str()
