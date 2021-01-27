@@ -28,5 +28,6 @@ Tests:
 	>>> print(a)
 	[1, 2, 3, 4]
 
-	>>> issubclass(MyList, list)
-	True
+	>>> my_list = MyList()
+	>>> type(my_list)
+	<class '1-my_list.MyList'>
