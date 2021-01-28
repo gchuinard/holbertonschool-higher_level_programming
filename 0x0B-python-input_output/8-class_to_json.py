@@ -3,8 +3,6 @@
 open a file in Python
 """
 
-import json
-
 
 def class_to_json(obj):
     """
