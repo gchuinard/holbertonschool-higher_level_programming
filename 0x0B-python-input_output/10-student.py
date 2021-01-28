@@ -20,7 +20,7 @@ class Student():
 
     def to_json(self, attrs=None):
 
-        if attrs == None:
+        if attrs is None:
             return self.__dict__
         new_dict = {}
         for key, value in self.__dict__.items():
