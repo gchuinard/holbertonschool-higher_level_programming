@@ -25,7 +25,7 @@ class Rectangle(BaseGeometry):
         return the description of the rectangle
         """
 
-        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
+        return "[{}] {:d}/{:d}".format(type(self).__name__, self.__width, self.__height)
 
     def area(self):
         """
