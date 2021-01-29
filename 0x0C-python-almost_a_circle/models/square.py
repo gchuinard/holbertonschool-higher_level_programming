@@ -18,18 +18,6 @@ class Square(Rectangle):
 
         super().__init__(size, size, x, y, id)
 
-        def to_dictionary(self):
-            """
-            returns the dictionary representation of a Square
-            """
-
-            return {
-                    "id": self.id,
-                    "size": self.size,
-                    "x": self.x,
-                    "y": self.y
-                    }
-
     def __str__(self):
         """
         return the description of square in string
@@ -71,3 +59,15 @@ class Square(Rectangle):
             for i, arg in kwargs.items():
                 if hasattr(self, i):
                     setattr(self, i, arg)
+
+    def to_dictionary(self):
+        """
+        returns the dictionary representation of a Square
+        """
+
+        return {
+                "id": self.id,
+                "size": self.size,
+                "x": self.x,
+                "y": self.y
+                }
