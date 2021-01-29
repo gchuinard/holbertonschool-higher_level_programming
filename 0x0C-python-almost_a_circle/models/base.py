@@ -24,6 +24,18 @@ class Base():
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        returns an instance with all attributes already set
+        """
+        if cls.__name__ is "Rectangle":
+            dum = cls(1, 1)
+        elif cls.__name__ is "Square":
+            dum = cls(1)
+            dum.update(**dictionary)
+        return dum
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """
@@ -47,6 +59,21 @@ class Base():
 
         with open(cls.__name__ + ".json", 'w+', encoding="utf-8") as f:
             f.write(cls.to_json_string(new_list))
+
+    @classmethod
+    def load_from_file(cls):
+        """
+        returns a list of instances from a file
+        """
+
+        new_list = []
+        try:
+            with open(cls.__name + ".json", mode="r", encoding="utf-8") as f:
+                for d in cls.from_json_string(f.read()):
+                    inst_list.append(cls.create(**d))
+        except:
+            pass
+        return new_list
 
     def from_json_string(json_string):
         """
