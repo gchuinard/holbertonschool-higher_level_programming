@@ -70,7 +70,7 @@ class Base():
         try:
             with open(cls.__name + ".json", mode="r", encoding="utf-8") as f:
                 for d in cls.from_json_string(f.read()):
-                    inst_list.append(cls.create(**d))
+                    new_list.append(cls.create(**d))
         except:
             pass
         return new_list
