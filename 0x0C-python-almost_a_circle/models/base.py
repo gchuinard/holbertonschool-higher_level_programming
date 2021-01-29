@@ -16,7 +16,6 @@ class Base():
         Constructor of Base
         """
 
-
         if id is not None:
             self.id = id
         else:
