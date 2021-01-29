@@ -33,7 +33,7 @@ class Base():
             dum = cls(1, 1)
         elif cls.__name__ is "Square":
             dum = cls(1)
-            dum.update(**dictionary)
+        dum.update(**dictionary)
         return dum
 
     @staticmethod
