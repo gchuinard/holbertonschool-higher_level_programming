@@ -22,6 +22,17 @@ class Rectangle(Base):
         self.y = y
         super().__init__(id)
 
+    def __str__(self):
+        """
+        return the description of rectangle in string
+        """
+
+        return "[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}".format(self.id,
+                                                                 self.x,
+                                                                 self.y,
+                                                                 self.width,
+                                                                 self.height)
+
     @property
     def width(self):
         """
