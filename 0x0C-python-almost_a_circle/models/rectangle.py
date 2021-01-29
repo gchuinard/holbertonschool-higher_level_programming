@@ -118,4 +118,3 @@ class Rectangle(Base):
             for w in range(self.__width):
                 print("#", end="")
             print()
-
