@@ -39,7 +39,7 @@ class Base():
         """
         writes the JSON string representation of list_objs to a file
         """
-        
+ 
         new_list = []
         if list_objs is not None:
             for i in list_objs:
