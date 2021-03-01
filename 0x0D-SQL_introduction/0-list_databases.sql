@@ -1,3 +1,3 @@
--- list al the database
--- of my MuSQL server
-SHOW DATABASE;
+-- list all the database of my MuSQL server
+
+SHOW DATABASES;
