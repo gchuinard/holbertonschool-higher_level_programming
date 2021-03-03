@@ -1,6 +1,6 @@
 -- lists all Comedy shows in the database hbtn_0d_tvshows.
 
-SELECT s.title
+SELECT ts.title
 FROM (`tv_genres` tg 
 	JOIN `tv_show_genres` tsg 
 	ON tg.id = tsg.genre_id)
