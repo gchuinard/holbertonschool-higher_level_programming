@@ -11,8 +11,9 @@ process.argv.forEach((value, index) => {
     pri = value;
   } else if (sec < value) {
     sec = value;
-  } else if (index === 2 && value < 0)
+  } else if (index === 2 && value < 0) {
     pri = value;
+  }
 });
 
 console.log(sec);
