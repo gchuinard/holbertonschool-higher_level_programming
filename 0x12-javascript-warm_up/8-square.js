@@ -12,7 +12,7 @@ if (isNaN(size)) {
     height = size;
     square = '';
     while (height > 0) {
-      square += '#';
+      square += 'X';
       height--;
     }
     console.log(square);
