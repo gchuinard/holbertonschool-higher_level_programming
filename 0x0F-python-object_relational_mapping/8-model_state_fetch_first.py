@@ -3,13 +3,14 @@
 prints the first State object from the database hbtn_0e_6_usa
 '''
 
+import sys
+from sqlalchemy import (create_engine)
+from sqlalchemy.orm import Session
+from sqlalchemy.engine.url import URL
+from model_state import Base, State
+
 
 if __name__ == "__main__":
-    import sys
-    from sqlalchemy import (create_engine)
-    from sqlalchemy.orm import Session
-    from sqlalchemy.engine.url import URL
-    from model_state import Base, State
 
     user = sys.argv[1]
     password = sys.argv[2]
