@@ -11,8 +11,8 @@ if __name == "__main__":
                                                               sys.argv[1])
     json = requests.get(url).json()
     for i in range(len(json)):
-        jsonFile = json[i]
-        print("{}: {}".format(jsonFile.get("sha"),
-                              jsonFile.get("commit").get("author").get("name")))
+        jsonFil = json[i]
+        print("{}: {}".format(jsonFil.get("sha"),
+                              jsonFil.get("commit").get("author").get("name")))
     if i == 9:
         break
