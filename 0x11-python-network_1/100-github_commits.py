@@ -6,7 +6,7 @@ import requests
 import sys
 
 
-if __name == "__main__":
+if __name__ == "__main__":
     url = 'https://api.github.com/repos/{}/{}/commits'.format(sys.argv[2],
                                                               sys.argv[1])
     json = requests.get(url).json()
@@ -14,5 +14,5 @@ if __name == "__main__":
         jsonFil = json[i]
         print("{}: {}".format(jsonFil.get("sha"),
                               jsonFil.get("commit").get("author").get("name")))
-    if i == 9:
-        break
+        if i == 9:
+            break
